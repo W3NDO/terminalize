@@ -1,0 +1,15 @@
+.container{
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.terminal{
+    width: 90%;
+    height: 800px;
+    margin: 1% 5%;
+    font-family: 'Share Tech Mono', monospace;
+    background-color: rgba(40,40,40,0.5);
+    color: "#00ff00";
+}
+.hiddenInputBox{
+    display: hidden;
+}
