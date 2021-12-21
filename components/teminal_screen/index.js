@@ -1,13 +1,16 @@
 import Styles from "./screen.module.css"
+import StackBuilder from "../stack";
 
+const commandStack = StackBuilder();
+
+const testStack = []
 
 const parseInput = event => {
     event.preventDefault()
-    let val = event.target.terminal.value + "\n ";
-    console.log(val)
-    event.target.terminal.value = val + " \n";
-    event.target.textArea.value += "\n " + val
-    console.log(val);
+    testStack.push(event.target.terminal.value + "\n ")
+    console.log(testStack[0])
+    // event.target.terminal.value = val + " \n";
+    // event.target.textArea.value += "\n " + val
 }
 
 let currentInput;
